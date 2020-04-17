@@ -1,0 +1,6 @@
+[submodule "tu2bo-authserver"]
+	path = tu2bo-authserver
+	url = git@github.com:NachoRaik/tu2bo-authserver.git
+[submodule "tu2bo-mobileapp"]
+	path = tu2bo-mobileapp
+	url = git@github.com:NachoRaik/tu2bo-mobileapp.git
