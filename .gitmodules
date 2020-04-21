@@ -4,3 +4,9 @@
 [submodule "tu2bo-mobileapp"]
 	path = tu2bo-mobileapp
 	url = git@github.com:NachoRaik/tu2bo-mobileapp.git
+[submodule "tu2bo-media-srv"]
+	path = tu2bo-media-srv
+	url = git@github.com:NachoRaik/tu2bo-media-srv.git
+[submodule "tu2bo-appserver"]
+	path = tu2bo-appserver
+	url = git@github.com:NachoRaik/tu2bo-appserver.git
