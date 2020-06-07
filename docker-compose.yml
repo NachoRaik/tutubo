@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  # Servers
+  appserver:
+    image: tu2bo-appserver_app
+    build:
+      context: ./tu2bo-appserver/app
+      dockerfile: Dockerfile.web
+    environment: 
+      - PORT=5000
+      - AUTH_URI=http://authserver:3000
+      - TUTUBO_ENV=PROD
+    ports:
+      - "5000:5000"
+    networks:
+      - default
+      - appserver-network
+      - system-network
+  
+  authserver:
+    image: tu2bo-authserver_app
+    build:
+      context: ./tu2bo-authserver/app
+      dockerfile: Dockerfile.web
+    environment: 
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    networks:
+      - authserver-network
+      - system-network
+
+  # DBs
+  appserver-db:
+    image: mongo:3.6.4
+    networks:
+      - appserver-network
+
+  authserver-db:
+    image: mongo:3.6.4
+    networks:
+      - authserver-network
+
+networks:
+  appserver-network:
+  authserver-network:
+  system-network:
