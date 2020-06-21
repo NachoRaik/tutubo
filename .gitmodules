@@ -10,3 +10,6 @@
 [submodule "tu2bo-appserver"]
 	path = tu2bo-appserver
 	url = git@github.com:NachoRaik/tu2bo-appserver.git
+[submodule "tu2bo-web-interface"]
+	path = tu2bo-web
+	url = git@github.com:chortas/tu2bo-web-interface.git
