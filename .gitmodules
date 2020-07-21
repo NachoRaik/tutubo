@@ -13,3 +13,6 @@
 [submodule "tu2bo-web-interface"]
 	path = tu2bo-web
 	url = git@github.com:chortas/tu2bo-web-interface.git
+[submodule "tu2bo-notificationserver"]
+	path = tu2bo-notificationserver
+	url = git@github.com:olifer97/tu2bo-notificationserver.git

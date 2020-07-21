@@ -9,6 +9,12 @@ Para clonar este repositorio junto a todos los otros del proyecto, se debe corre
 
 	git clone --recursive git@github.com:NachoRaik/tutubo.git
 
+Si ya esta clonado, pero hubo cambios en el repositorio y en los submodulos, ejecutar los siguientes comandos (**CUIDADO**: hacer esto reseteará los submodulos, procurar stashear/commitear todos los cambios que se encuentren presentes):
+
+	git pull
+	git submodule update --init --recursive
+
+
 Consideraciones: 
 
 - Los subrepos estarán apuntando a algún commit en particular, recordar hacer `checkout` y `pull` de lo último a la hora de trabajar sobre ellos.
