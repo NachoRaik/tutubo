@@ -13,6 +13,7 @@ services:
       - MEDIA_URI=http://media-srv:5005
       - TUTUBO_ENV=PROD
       - MONGODB_URI=mongodb://appserver-db:27017/appserver-db
+      - AUTH_API_KEY=asdf1234
     ports:
       - "5000:5000"
     networks:
@@ -29,6 +30,7 @@ services:
       - PORT=3000
       - TUTUBO_ENV=PROD
       - MONGODB_URI=mongodb://authserver-db:27017/authserver-db
+      - MASTER_API_KEY=asdf1234
     ports:
       - "3000:3000"
     networks:
